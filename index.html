@@ -1,83 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Scott Watson's Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scott Watson's Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
 
 <body>
-  <nav>
-    <ul>
-      <li>Scott Watson</li>
-      <li>Home</li>
-      <li>Portfolio</li>
-      <li>Contact</li>
-  </nav>
+  <header class="main-header">
+    <h1 class="name">Scott Watson</h1>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+      </nav>
+  </header>
+
+  <div class="banner">
+    <img src="images\responsive-layout-profile.png" alt="image for profile" class="banner-img">
+      <p>Hi! I'm a front-end developer who loves responsive deseign and css.
+          I recently finished a degree in front-end web development at
+          Treehouse and am excited to put all my skills to use!</p>
+  </div>
 
   <main>
-    <header>
-      <img src="images\responsive-layout-profile.png" alt="image for profile">
-      <p>Hi! I'm a front-end developer who loves responsive deseign and css.
-        I recently finished a degree in front-end web development at
-        Treehouse and am excited to put all my skills to use!</p>
-    </header>
 
-    <section>
-      <h2>Portfolio</h2>
-        <img src="images\portfolio-1.png" alt="portfolio img">
+    <section class="col">
+      <h3 class="port">Portfolio</h3>
+
     </section>
 
-    <section>
-      <h3>Marketing Page</h3>
-        <img src="images\portfolio-2.png" alt="Marketing Page img">
+    <section class="col">
+        <img src="images\portfolio-1.png" alt="Marketing img">
+        <h3>Marketing Page</h3>
         <p>This project hows the front page of a
           parketing website meant for a specific business I'm interested in.</p>
     </section>
 
-    <section>
-      <h3>Search Page</h3>
-        <img src="images\portfolio-3.png" alt="Search Page img">
-        <p>This project searches through a specific database to find infromation that the user is trying to look up.</p>
-    </section>
+    <section class="col">
 
-    <section>
-      <h3>Travel App</h3>
-        <img src="images\portfolio-4.png" alt="Travel App img">
+        <img src="images\portfolio-2.png" alt="Search Page img">
+        <h3>Search Page</h3>
+        <p>This project searches through a specific database to find infromation that the user is trying to look up.</p>
+    </section class="container">
+
+    <section class="col">
+        <img src="images\portfolio-3.png" alt="Travel img">
+        <h3>Travel App</h3>
         <p>This project compares travel times based on differest transportation methods and tells you the best one.</p>
     </section>
 
-    <section>
-      <h3>Map of Favourite Spots</h3>
-        <img src="images\portfolio-5.png" alt="Map of Favourite Spots img">
+    <section class="col">
+        <img src="images\portfolio-4.png" alt="Mp of Favourite Spots img">
+        <h3>Map of Favourite Spots</h3>
         <p>This project uses mapping apis to plot points for my favourite spots in the city for a do-it-yourself walking tour.</p>
     </section>
 
-    <section>
-      <h3>Photo Gallery</h3>
-        <img src="images\portfolio-6.png" alt="Photo Gallery img">
+    <section class="col">
+        <img src="images\portfolio-5.png" alt="Photo Gallery img">
+        <h3>Photo Gallery</h3>
         <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
     </section>
 
-    <section>
+    <section class="col">
+      <img src="images\portfolio-6.png" alt="Photo Gallery img">
       <h3>Calculator</h3>
       <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
     </section>
 
   </main>
 
-  <footer>
+  <footer class="main-footer">
     <h4>Contact</h4>
     <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
     <ul>
-      <li>Phone 07854 547586</li>
-      <li>Email email@yoursite.com</li>
+      <li>Phone: <span>07854 547586</span></li>
+      <li>Email: <span>email@yoursite.com</span></li>
     </ul>
 
     <ul>
       <li>Student name</li>
-      <li>Back to top</li>
+      <li><a href="#main-nav">Back to top</a></li>
     </ul>
   </footer>
 
