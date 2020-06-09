@@ -92,18 +92,6 @@ span {
 	color: #093a58;
 }
 
-.main-footer li {
-  display: inline-block;
-  text-align: center;
-}
-
-.main-footer ul {
-  text-align: center;
-}
-
-.main-footer {
-  width: 100%;
-}
 
 /* ---- Layout Containers ---- */
 
@@ -112,7 +100,7 @@ main {
 }
 
 .main-header {
-  padding-top: 2em;
+  padding-top: 3em;
   padding-bottom: .5em;
 }
 
@@ -122,8 +110,8 @@ main {
 }
 
 .col {
-  padding-right: 1em;
-  padding-left: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
   text-align: center;
   margin-top: 50px;
 }
@@ -181,23 +169,29 @@ main {
 /* footer */
 
 .main-footer {
-	margin-top: 50px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
   border-top: 1px rgb(155, 155, 155, 30%) solid;
   font-weight: bold;
   font-size: 0.7em;
-  width: 100vp;
+  max-width: 90%;
 }
 
-.footer-nav {
+.footer-nav-320 {
   float: right;
-  padding-left: 2em;
+  padding-right: 2em;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
+.footer-nav-768 {
+  display: none;
+}
+
 .footer-name {
   float: left;
-  padding-top: 0px;
+  padding-top: 1em;
   padding-left: 2em;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -267,6 +261,30 @@ main {
     display: block;
   }
 
+  .col {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .footer-nav-768 {
+    display: contents;
+    float: right;
+    padding-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+  }
+
+  .footer-nav-768 li {
+    display: inline-block;
+  }
+
+  .footer-nav-320 {
+    display: none;
+  }
+
+/* wrappers */
+
   .main-wrapper {
     display: flex;
     padding-right: 2em;
@@ -322,6 +340,11 @@ main {
   .contact p {
     padding-bottom: 30px;
     padding-top: 10px;
+  }
+
+  main {
+    margin-right: 2em;
+    margin-left: 2em;
   }
 
 }
