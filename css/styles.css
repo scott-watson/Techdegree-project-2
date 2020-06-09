@@ -35,7 +35,8 @@ a {
 	text-decoration: none;
 }
 
-img {
+img,
+video {
 	max-width: 100%;
 }
 
@@ -136,17 +137,30 @@ main {
   max-width: 60%;
 }
 
-.contact {
-  padding-top: 20px;
+.second-column {
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
+
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 50px;
+
   text-align: center;
-  font-size: 0.9em;
-  width: auto;
+
+  max-width: 100%;
+  display: block;
 }
 
-.contact-list li {
-  padding-top: 5px;
+.second-column h2 {
+  margin: 10px 0px;
 }
+
+.second-column p {
+  margin: 15px;
+}
+
 /* ---- Page Elements ---- */
 
 .logo {
@@ -161,12 +175,29 @@ main {
   margin-bottom: 20px;
 }
 
+.second-column video {
+  margin-bottom: 20px;
+}
+
 .contact h3 {
   text-transform: uppercase;
   font-weight: bold;
 }
 
 /* footer */
+
+.contact {
+  padding-top: 20px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0.9em;
+  width: auto;
+}
+
+.contact-list li {
+  padding-top: 5px;
+}
+
 
 .main-footer {
   margin-top: 50px;
@@ -241,6 +272,10 @@ main {
     font-size: 98%;
   }
 
+  .second-column {
+    width: 50%;
+  }
+
   .banner {
     float: left;
     font-size: 110%;
@@ -309,6 +344,12 @@ main {
 /* media query for 1024 px */
 
 @media (min-width: 1024px) {
+
+  * {
+    max-width: 1200px;
+    margin: auto;
+  }
+
   .col {
     width: 33%;
     margin: 35px auto;
@@ -318,6 +359,10 @@ main {
   .contact p {
     font-size: 1.1em;
     width: 40%;
+  }
+
+  .second-column {
+    width: 33%;
   }
 
   .main-header ul {
