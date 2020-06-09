@@ -20,7 +20,8 @@ h3 {
 	color: #093a58;
 }
 
-h3 {
+h3,
+h2 {
   text-align: center;
 }
 
@@ -40,6 +41,10 @@ video {
 
 span {
   font-weight: bold;
+}
+
+.main p {
+  font-family: 'Roboto', Ariel, sans-serif;
 }
 
 /* =================================
@@ -178,6 +183,8 @@ main {
 
 .port {
   text-transform: uppercase;
+  padding-top: 30px;
+  font-size: 120%;
 }
 
 .col img {
@@ -186,6 +193,7 @@ main {
 
 .second-column video {
   margin-bottom: 20px;
+  border-radius: 5%
 }
 
 
@@ -210,7 +218,7 @@ main {
 }
 
 .contact a {
-  color: rgb(240, 240, 240)
+  color: rgb(240, 240, 240);
 }
 
 .contact a:hover {
@@ -258,28 +266,28 @@ main {
 
 /* Navigation */
 
-.main-nav {
-  text-align: center;
-}
+  .main-nav {
+    text-align: center;
+  }
 
-.main-nav a {
-	text-align: center;
-  display: inline-block;
-  padding: 15px 0px;
-  font-weight: bold;
-  background: none;
-  margin: 5px 1em;
-}
+  .main-nav a {
+  	text-align: center;
+    display: inline-block;
+    padding: 15px 0px;
+    font-weight: bold;
+    background: none;
+    margin: 5px 1em;
+  }
 
-.main-nav a {
-	font-size: .95em;
-	color: rgb(240, 240, 240);
-	text-transform: uppercase;
-}
+  .main-nav a {
+  	font-size: .95em;
+  	color: rgb(240, 240, 240);
+  	text-transform: uppercase;
+  }
 
-.main-nav li {
-  display: inline-block;
-}
+  .main-nav li {
+    display: inline-block;
+  }
 
 /* layout */
 
@@ -360,7 +368,7 @@ main {
   }
 
   .port {
-    font-size: 110%;
+    font-size: 150%;
   }
 
 /* media query for 1024 px */
@@ -428,9 +436,10 @@ main {
   }
 
   .port {
-    font-size: 130%;
+    font-size: 170%;
   }
-}
+
+
 
 	/* ---- Float clearfix ---- */
 
@@ -439,3 +448,5 @@ main {
 		display: table;
 		clear: both;
 	}
+
+}
