@@ -162,6 +162,14 @@ main {
   margin: 15px;
 }
 
+.second-column a {
+  color: rgb(47, 79, 79);
+}
+
+.second-column a:hover {
+  opacity: 0.8;
+}
+
 /* ---- Page Elements ---- */
 
 .logo {
