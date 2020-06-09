@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Roboto', Ariel, serif;
+    font-family: 'Montserrat', 'Roboto', Ariel, sans-serif;
     line-height: 1.6;
     background: rgb(47, 79, 79);
   }
@@ -359,6 +359,10 @@ main {
     font-size: 0.8em;
   }
 
+  .port {
+    font-size: 110%;
+  }
+
 /* media query for 1024 px */
 
 @media (min-width: 1024px) {
@@ -389,6 +393,7 @@ main {
 
   .name {
     float: left;
+    font-size: 180%;
   }
 
   .main-header {
@@ -409,7 +414,22 @@ main {
     margin-right: 2em;
     margin-left: 2em;
   }
+  .banner {
+    font-size: 140%;
+    padding-left: 1.5em;
+  }
 
+  .banner img {
+    padding-left: 4em;
+  }
+
+  .banner p {
+    padding-top: 1em;
+  }
+
+  .port {
+    font-size: 130%;
+  }
 }
 
 	/* ---- Float clearfix ---- */
