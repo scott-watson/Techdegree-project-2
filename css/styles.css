@@ -21,6 +21,10 @@ a {
 	color: #093a58;
 }
 
+h3 {
+  text-align: center;
+}
+
 h2,
 h3 {
 	margin-top: 0;
@@ -52,6 +56,7 @@ span {
 
 .main-nav {
   magin-top: 5px;
+  font-size: 90%;
   }
 
 .name a,
@@ -74,6 +79,27 @@ span {
 	color: #093a58;
 }
 
+.main-footer a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-footer a:hover {
+	color: #093a58;
+}
+
+.main-footer li {
+  display: inline-block;
+  text-align: center;
+}
+
+.main-footer ul {
+  text-align: center;
+}
+
 /* ---- Layout Containers ---- */
 
 .main-header {
@@ -88,7 +114,8 @@ span {
 
 .main-header,
 .main-footer,
-.banner {
+.banner,
+.contact {
   background: rgb(255, 250, 250);
 }
 
@@ -96,6 +123,7 @@ span {
   padding-right: 1em;
   padding-left: 1em;
   text-align: center;
+  margin-top: 50px;
 }
 
 .col h2 {
@@ -107,18 +135,43 @@ span {
 }
 
 .main-footer {
-	padding: 2em 0;
-	margin-top: 30px;
+	margin-top: 50px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+
+  padding: 0px;
+
+  display: inline-block;
+  text-align: center;
+  border-top: 1px rgb(155, 155, 155, 30%) solid;
+  font-weight: bold;
+  font-size: 0.7em;
+  width: 100vp;
 }
 
 .banner {
   padding-top: 20px;
+  padding-right: 1em;
+  padding-left: 1em;
+  font-size: 105%;
 }
 
 .banner-img {
   max-width: 60%;
 }
 
+.contact {
+  padding-top: 20px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0.9em;
+  width: auto;
+}
+
+.contact-list li {
+  padding-top: 20px;
+}
 /* ---- Page Elements ---- */
 
 .logo {
@@ -133,11 +186,95 @@ span {
   margin-bottom: 20px;
 }
 
+.contact h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 /* =================================
-  Media Queries
+  Media Queries - 768px screen
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+
+/* Navigation */
+
+.main-nav {
+  text-align: center;
+}
+
+.main-nav a {
+	text-align: center;
+  display: inline-block;
+  padding: 15px 0px;
+  font-weight: bold;
+  background: none;
+  margin: 5px 1em;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: black;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+.main-nav li {
+  display: inline-block;
+}
+
+/* layout */
+
+  .col {
+    float: left;
+    width: 50%;
+    margin: 40px auto;
+    font-size: 98%;
+
+  }
+
+  .banner {
+    float: left;
+    position: relative;
+    font-size: 110%;
+    text-align: left;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    padding-bottom: 40px;
+  }
+
+  .banner img {
+    float: right;
+    padding: 20px;
+    max-width: 45%;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .main-wrapper {
+    display: flex;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
+}
+
+/* elements */
+
+  .contact p {
+    max-width: 50%;
+    margin: auto;
+    font-size: 1em;
+  }
+
+  .contact h3 {
+    font-size: 0.8em;
+  }
 
 
 

@@ -12,7 +12,7 @@
   <header class="main-header">
     <h1 class="name">Scott Watson</h1>
       <nav>
-        <ul class="main-nav">
+        <ul id="top" class="main-nav">
           <li><a href="#">Home</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Contact</a></li>
@@ -26,13 +26,12 @@
           Treehouse and am excited to put all my skills to use!</p>
   </div>
 
-  <main>
-
-    <section class="col">
+  <main class="container">
+    <section>
       <h3 class="port">Portfolio</h3>
-
     </section>
 
+    <div class="main-wrapper">
     <section class="col">
         <img src="images\portfolio-1.png" alt="Marketing img">
         <h3>Marketing Page</h3>
@@ -40,13 +39,15 @@
           parketing website meant for a specific business I'm interested in.</p>
     </section>
 
-    <section class="col">
 
+    <section class="col">
         <img src="images\portfolio-2.png" alt="Search Page img">
         <h3>Search Page</h3>
         <p>This project searches through a specific database to find infromation that the user is trying to look up.</p>
     </section class="container">
+    </div>
 
+    <div class="main-wrapper">
     <section class="col">
         <img src="images\portfolio-3.png" alt="Travel img">
         <h3>Travel App</h3>
@@ -58,7 +59,9 @@
         <h3>Map of Favourite Spots</h3>
         <p>This project uses mapping apis to plot points for my favourite spots in the city for a do-it-yourself walking tour.</p>
     </section>
+    </div>
 
+    <div class="main-wrapper">
     <section class="col">
         <img src="images\portfolio-5.png" alt="Photo Gallery img">
         <h3>Photo Gallery</h3>
@@ -70,22 +73,27 @@
       <h3>Calculator</h3>
       <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
     </section>
+    </div>
 
   </main>
 
-  <footer class="main-footer">
-    <h4>Contact</h4>
-    <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-    <ul>
-      <li>Phone: <span>07854 547586</span></li>
-      <li>Email: <span>email@yoursite.com</span></li>
-    </ul>
+    <div class="contact">
+      <section>
+        <h3>Contact</h3>
+        <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+        <ul class="contact-list">
+          <li>Phone <span>07854 547586</span></li>
+          <li>Email <span>email@yoursite.com</span></li>
+        </ul>
+      </section>
 
-    <ul>
-      <li>Student name</li>
-      <li><a href="#main-nav">Back to top</a></li>
-    </ul>
-  </footer>
+      <footer class="main-footer">
+        <ul>
+          <li>Student name</li>
+          <li><a href="#top">Back to top</a></li>
+        </ul>
+      </footer>
+    </div>
 
 
 
