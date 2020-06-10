@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Montserrat', 'Roboto', Ariel, sans-serif;
+    font-family: 'Montserrat', 'Roboto', 'Ariel', sans-serif;
     line-height: 1.6;
     background: rgb(47, 79, 79);
   }
@@ -44,7 +44,7 @@ span {
 }
 
 .main p {
-  font-family: 'Roboto', Ariel, sans-serif;
+  font-family: 'Roboto', 'Ariel', sans-serif;
 }
 
 /* =================================
@@ -371,7 +371,7 @@ main {
     font-size: 150%;
   }
 
-/* media query for 1024 px */
+/* ---------media query for 1024 px ----------*/
 
 @media (min-width: 1024px) {
 
